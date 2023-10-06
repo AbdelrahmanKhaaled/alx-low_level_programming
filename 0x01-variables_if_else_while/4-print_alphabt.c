@@ -18,6 +18,7 @@ int main(void)
 			putchar(ch);
 		if (ch == 'z')
 			putchar('\n');
+		ch++;
 	}
 	return (0);
 }

@@ -17,7 +17,7 @@ int main(void)
 		printf("%i", n);
 		n++;
 		if (n == 9)
-			printf("%i", n);
+			printf('\n');
 	}
 	return (0);
 }

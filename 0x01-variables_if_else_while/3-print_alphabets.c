@@ -24,7 +24,7 @@ int main(void)
 		putchar(ch);
 		if (ch == 'Z')
 			putchar('\n');
-		ch++
+		ch++;
 	}
 	return (0);
 }
