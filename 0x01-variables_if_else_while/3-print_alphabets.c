@@ -6,7 +6,7 @@
  * Description: print all alphabitcs in lowercase
  *
  * Return: 0 (Success)
- */
+*/
 
 int main(void)
 {
@@ -16,10 +16,15 @@ int main(void)
 	while (ch <= 'z')
 	{
 		putchar(ch);
-		if (ch == 'z')
-			putchar('\n');
 		ch++;
 	}
-
+	ch = 'A';
+	while (ch <= 'Z')
+	{
+		putchar(ch);
+		if (ch == 'Z')
+			putchar('\n');
+		ch++
+	}
 	return (0);
 }
