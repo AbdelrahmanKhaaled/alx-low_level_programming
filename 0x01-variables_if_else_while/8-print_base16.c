@@ -11,5 +11,18 @@
 int main(void)
 {
 	int n = 0;
-	char ch = (char) 
+	char ch;
+
+	while (n <= 9)
+	{
+		putchar(n + '0');
+	}
+
+	ch = 'A';
+	while (ch <= 'F')
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }
