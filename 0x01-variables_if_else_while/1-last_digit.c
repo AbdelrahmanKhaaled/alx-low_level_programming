@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	string n;
+	char n[];
 
 	scanf("%s", n);
 	if (n[strlen(n) - 1] > 5)
