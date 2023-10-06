@@ -5,7 +5,7 @@
  *
  *   Description: print all alphabitcs in lowercase
  *
- *   Return: 0 (Success)
+ *   Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -15,8 +15,8 @@ int main(void)
 	{
 		putchar(n + '0');
 		n++;
-		if (n == 9)
-			putchar('\n');
 	}
+	putchar('\n');
+
 	return (0);
 }
