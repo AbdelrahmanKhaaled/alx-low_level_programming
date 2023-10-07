@@ -36,10 +36,13 @@ int main(void)
 					n++;
 				}
 				k++;
+				n = 0;
 			}
 			j++;
+			k = 0;
 		}
 		i++;
+		j = 0;
 	}
 	putchar('\n');
 	return (0);
