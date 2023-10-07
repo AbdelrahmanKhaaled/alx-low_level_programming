@@ -11,41 +11,28 @@
 int main(void)
 {
 	int i = 0;
-	int j = 0;
-	int k = 0;
-	int n = 0;
-
-	while (i <= 9)
+	int j;
+	while (i <= 99)
 	{
-		while (j <= 9)
+		j = i;
+		while (j <= 99)
 		{
-			while (k <= 9)
+			if (i != j)
 			{
-				while (n <= 9)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					if (n > j || k > i)
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(' ');
-						putchar(k + '0');
-						putchar(n + '0');
-					if (!(i == 9 && j == 8 && k == 9 && n == 9))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					}
-					n++;
+					putchar(',');
+					putchar(' ');
 				}
-				k++;
-				n = 0;
 			}
 			j++;
-			k = 0;
 		}
 		i++;
-		j = 0;
 	}
 	putchar('\n');
 	return (0);
