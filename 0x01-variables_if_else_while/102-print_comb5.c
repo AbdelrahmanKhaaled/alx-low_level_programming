@@ -23,7 +23,7 @@ int main(void)
 			{
 				while (n <= 9)
 				{
-					if (n > j || k < i)
+					if (n > j || k > i)
 					{
 						putchar(i + '0');
 						putchar(j + '0');
@@ -33,9 +33,13 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
+					n++;
 				}
+				k++;
 			}
+			j++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
