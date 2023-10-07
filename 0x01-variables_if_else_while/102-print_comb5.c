@@ -47,6 +47,6 @@ int main(void)
 		i++;
 		j = 0;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
