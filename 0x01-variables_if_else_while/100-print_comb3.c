@@ -7,19 +7,24 @@
  *
  *   Return: 0 (Success)
 */
+
 int main(void)
 {
-	int n = 0;
+	int i = 0;
+	int j = 1;
 
-	while (n <= 9)
+	while (i <= 9)
 	{
-		putchar(n + '0');
-		if (n != 9)
+		while (j <= 9)
 		{
-			putchar(',');
-			putchar(' ');
+			if (j > i)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		n++;
 	}
 	putchar('\n');
 	return (0);
