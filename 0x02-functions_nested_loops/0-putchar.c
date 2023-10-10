@@ -1,6 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
-#include<main.h>
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -11,7 +11,12 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putchar";
+	int ch;
+
+	for (ch = 0 ; ch < 8 ; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');	
 
 	return (0);
 }

@@ -1,29 +1,21 @@
 #include<stdlib.h>
 #include<stdio.h>
-#include<main.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * Description: print all alphabitcs in lowercase using print_alphabet
- *
- * Return: 0 (Success)
+ * print_alphabet - utilizes on the _putchar function to print the alphabet
+ * a - z
 */
 
-void print_alphabet(void);
 
 void print_alphabet(void)
 {
 	char ch = 'a';
 
-	while (ch < 'z')
+	while (ch <= 'z')
 	{
-		putchar(ch);
+		_putchar(ch);
 		ch++;
 	}
+	_putchar('\n');
 }
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
