@@ -14,7 +14,7 @@ int main(void)
 	int i;
 	unsigned long k = 0, l = 1;
 
-	for (i = 1 ; i <= 98 ; i++)
+	for (i = 1 ; i <= 97 ; i++)
 	{
 		printf("%lu, ", (k + l));
 		if ((i % 2) != 0)
