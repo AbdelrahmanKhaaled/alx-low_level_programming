@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: print all alphabitcs in lowercase
+ * Description: prints _putchar, followed by a new line.
  *
  * Return: 0 (Success)
 */
