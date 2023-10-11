@@ -14,15 +14,15 @@ int main(void)
 	int i;
 	long k = 0, l = 1;
 
-	for (i = 1 ; i <= 98)
+	for (i = 1 ; i <= 98 ; i++)
 	{
-		print("%d, ", (k + l));
+		printf("%d, ", (k + l));
 		if ((i % 2) != 0)
 			k = k + l;
 		else
 			l = k + l;
 	}
-	print("%d\n", (k + l));
+	printf("%d\n", (k + l));
 
 	return (0);
 }

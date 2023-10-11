@@ -23,7 +23,7 @@ int main(void)
 			 l = k + l;
 		 i++;
 	}
-	print("%d\n", (k + l));
+	printf("%d\n", (k + l));
 
 	return (0);
 }
