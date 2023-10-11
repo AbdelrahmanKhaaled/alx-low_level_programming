@@ -12,17 +12,17 @@
 int main(void)
 {
 	int i;
-	long int k = 0, l = 1;
+	unsigned long k = 0, l = 1;
 
 	for (i = 1 ; i <= 98 ; i++)
 	{
-		printf("%ld, ", (k + l));
+		printf("%lu, ", (k + l));
 		if ((i % 2) != 0)
 			k = k + l;
 		else
 			l = k + l;
 	}
-	printf("%ld\n", (k + l));
+	printf("%lu\n", (k + l));
 
 	return (0);
 }
