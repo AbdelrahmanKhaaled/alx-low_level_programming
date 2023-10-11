@@ -19,17 +19,14 @@ void print_times_table(int n)
 			{
 				res = i * j;
 
-				if (j != 9)
+				_putchar(',');
+				if(res < 99)
 				{
-					_putchar(',');
-					if(res < 99)
-					{
-						_putchar(' ');
-						if (res <= 9)
-							_putchar(' ');
-					}
 					_putchar(' ');
+					if (res <= 9)
+						_putchar(' ');
 				}
+					_putchar(' ');
 
 				if (res > 9)
 				{
