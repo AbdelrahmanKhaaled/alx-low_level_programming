@@ -16,13 +16,13 @@ int main(void)
 
 	for (i = 1 ; i <= 98 ; i++)
 	{
-		printf("%d, ", (k + l));
+		printf("%ld, ", (k + l));
 		if ((i % 2) != 0)
 			k = k + l;
 		else
 			l = k + l;
 	}
-	printf("%d\n", (k + l));
+	printf("%ld\n", (k + l));
 
 	return (0);
 }
