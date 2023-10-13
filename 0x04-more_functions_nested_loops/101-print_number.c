@@ -28,7 +28,7 @@ void print_number(int n)
 	}
 	else
 	{
-		_putchar('_');
+		_putchar('-');
 		if (n < -9)
 		{
 			if (n < -99)
