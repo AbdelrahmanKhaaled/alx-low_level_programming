@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: prints the numbers from one to hundered, followed by a new line.
+ * Description: prints the numbers from one to hundered,
+ * followed by a new line.
  *
  * Return: Always 0 (Success)
 */
