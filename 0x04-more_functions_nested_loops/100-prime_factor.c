@@ -34,9 +34,9 @@ int isPrime(int num)
 int main(void)
 {
 	int number = 2;
-	long int num = 612852475143;
+	long long int num = 612852475143;
 
-	while (1)
+	while (1 > 0)
 	{
 		if (isPrime(number))
 		{
