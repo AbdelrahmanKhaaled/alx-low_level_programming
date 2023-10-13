@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * Description: prints the numbers from 1 to 100, followed by a new line.
+ * Description: prints the numbers from one to hundered, followed by a new line.
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
