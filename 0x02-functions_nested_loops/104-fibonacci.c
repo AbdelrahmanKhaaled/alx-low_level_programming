@@ -16,15 +16,15 @@ int main(void)
 	int fibonacci3;
 	int i;
 
-	printf("%d, ", fibonacci1);
-	printf("%d, ", fibonacci2);
+	printf("%i, ", fibonacci1);
+	printf("%i, ", fibonacci2);
 	for (i = 3; i < 98; i++)
 	{
 		fibonacci3 = fibonacci1 + fibonacci2;
-		printf("%d, ", fibonacci3);
+		printf("%i, ", fibonacci3);
 		fibonacci1 = fibonacci2;
 		fibonacci2 = fibonacci3;
 	}
-	printf("%d\n", (fibonacci1 + fibonacci2));
+	printf("%i\n", (fibonacci1 + fibonacci2));
 	return (0);
 }
