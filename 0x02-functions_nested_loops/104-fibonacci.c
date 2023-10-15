@@ -12,7 +12,6 @@
 int main(void)
 {
 	long int fibonacci1 = 1;
-	
 	long int fibonacci2 = 2;
 	long int fibonacci3;
 	int i;
