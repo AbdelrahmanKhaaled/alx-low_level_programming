@@ -11,20 +11,21 @@
 
 int main(void)
 {
-	int fibonacci1 = 1;
-	int fibonacci2 = 2;
-	int fibonacci3;
+	long int fibonacci1 = 1;
+	
+	long int fibonacci2 = 2;
+	long int fibonacci3;
 	int i;
 
-	printf("%i, ", fibonacci1);
-	printf("%i, ", fibonacci2);
+	printf("%li, ", fibonacci1);
+	printf("%li, ", fibonacci2);
 	for (i = 3; i < 98; i++)
 	{
 		fibonacci3 = fibonacci1 + fibonacci2;
-		printf("%i, ", fibonacci3);
+		printf("%li, ", fibonacci3);
 		fibonacci1 = fibonacci2;
 		fibonacci2 = fibonacci3;
 	}
-	printf("%i\n", (fibonacci1 + fibonacci2));
+	printf("%li\n", (fibonacci1 + fibonacci2));
 	return (0);
 }
