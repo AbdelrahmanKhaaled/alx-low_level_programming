@@ -18,21 +18,18 @@ int _atoi(char *s)
 
 	for (i = 0 ; i < strlen(s) ; i++)
 	{
-		if (num <= 0 && !(s[i] <= '0' && s[i] >= '9'))
-		{
-			if (s[i] == '-' && ch == '-')
-				ch = '+';
-			else if (s[i] == '+' && ch == '-')
-				ch = '-';
-			else if (s[i] == '-' && ch == '+')
-				ch = '-';
-			else if (s[i] == '+' && ch == '+')
-				ch = '+';
-			else if (s[i] >= '0' && s[i] <= '9')
-				num = (num * 10) + (s[i] - 48);
-		}
-		else
+		if (num > 0 && !(s[i] >= '0' && s[i] <= '9'))
 			break;
+		if (s[i] == '-' && ch == '-')
+			ch = '+';
+		else if (s[i] == '+' && ch == '-')
+			ch = '-';
+		else if (s[i] == '-' && ch == '+')
+			ch = '-';
+		else if (s[i] == '+' && ch == '+')
+			ch = '+';
+		else if (s[i] >= '0' && s[i] <= '9')
+			num = (num * 10) + (s[i] - 48);
 
 	}
 	if (ch == '+')
