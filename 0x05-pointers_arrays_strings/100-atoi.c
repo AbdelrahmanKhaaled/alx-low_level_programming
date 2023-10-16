@@ -26,7 +26,10 @@ int _atoi(char *s)
 		else if (s[i] == '+' && ch == '+')
 			ch = '+';
 		else if (s[i] >= '0' && s[i] <= '9')
+		{
 			num = (num * 10) + (int) (s[i]) ;
+			printf("%d, ", (int) (s[i]));
+		}
 
 	}
 	if(ch == '+')
