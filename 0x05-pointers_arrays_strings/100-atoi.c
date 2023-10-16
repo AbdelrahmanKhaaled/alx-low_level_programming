@@ -29,7 +29,7 @@ int _atoi(char *s)
 			num = (num * 10) + (int) (s[i]) ;
 
 	}
-	if(ch = '+')
+	if(ch == '+')
 		return (num);
 	else
 		return (-num);
