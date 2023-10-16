@@ -13,7 +13,7 @@
 int _atoi(char *s)
 {
 	unsigned int i;
-	int num = 0;
+	double num = 0;
 	char ch = '+';
 
 	for (i = 0 ; i < strlen(s) ; i++)
