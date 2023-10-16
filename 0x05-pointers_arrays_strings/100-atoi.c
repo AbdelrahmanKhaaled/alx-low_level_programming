@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
- *  
+ * _atoi - convert a string to an integer.
  *
- * @c: checks input of function
+ * @s: checks input of function
  *
  * Return: returns 1 if 'c' is alphabet
  *     otherwise always 0 (Success)
@@ -15,6 +15,7 @@ int _atoi(char *s)
 	unsigned int i;
 	int num = 0;
 	char ch = '+';
+
 	for (i = 0 ; i < strlen(s) ; i++)
 	{
 		if (s[i] == '-' && ch == '-')
@@ -26,13 +27,10 @@ int _atoi(char *s)
 		else if (s[i] == '+' && ch == '+')
 			ch = '+';
 		else if (s[i] >= '0' && s[i] <= '9')
-		{
-			num = (num * 10) + (s[i] - 48) ;
-			printf("%d, ", (int) (s[i]));
-		}
+			num = (num * 10) + (s[i] - 48);
 
 	}
-	if(ch == '+')
+	if (ch == '+')
 		return (num);
 	else
 		return (-num);
