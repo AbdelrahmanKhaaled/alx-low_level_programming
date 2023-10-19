@@ -11,7 +11,7 @@
 
 char *cap_string(char *s)
 {
-	int i;
+	unsigned long int i;
 
 	for (i = 0 ; i < strlen(s) ; i++)
 	{
