@@ -12,7 +12,7 @@
 
 char *string_toupper(char *s)
 {
-	int i;
+	unsigned long int i;
 
 	for (i = 0 ; i < strlen(s) ; i++)
 	{
