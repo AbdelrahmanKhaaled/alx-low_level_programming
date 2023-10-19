@@ -4,28 +4,29 @@
 /**
  * leet - encodes a string into 1337.
  *
- * @s: checks input of function
+ * @c: checks input of function
  *
- * Return: returns 's' after encoding
+ * Return: returns 'c' after encoding
 */
 
-char *leet(char *s)
+char *leet(char *c)
 {
-	unsigned long int i;
-	int j;
-	char *c = s;
+	unsigned int i;
+	char *cp = c;
 	int arr[6] = {4, 3, 0, 7, 1, 5};
 	char arr2[6] = {'A', 'E', 'O', 'T', 'L', 'S'};
 	char arr3[6] = {'a', 'e', 'o', 't', 'l', 's'};
 
-	for (i = 0 ; i < strlen(s) ; i++)
+
+	while (*c)
 	{
-		for (j = 0 ; j < 6 ; j++)
+		for (i = 0 ; j < 6 ; j++)
 		{
-			if (s[i] == arr2[j] || s[i] == arr3[j])
-				s[i] = arr[j] + '0';
+			if (*c == arr2[j] || *c == arr3[j])
+				*c = arr[j] + '0';
 		}
+		c++;
 	}
 
-	return (c);
+	return (cp);
 }
