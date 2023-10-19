@@ -20,10 +20,11 @@ char *leet(char *c)
 
 	while (*c)
 	{
-		for (i = 0 ; j < 6 ; j++)
+
+		for (i = 0 ; i < 6 ; i++)
 		{
-			if (*c == arr2[j] || *c == arr3[j])
-				*c = arr[j] + '0';
+			if (*c == arr2[i] || *c == arr3[i])
+				*c = arr[i] + '0';
 		}
 		c++;
 	}
