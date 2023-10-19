@@ -13,6 +13,7 @@ char *rot13(char *s)
 {
 	unsigned long int i;
 	int j;
+	char *c = s;
 	char arr[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 			'M',
 			'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
@@ -29,7 +30,8 @@ char *rot13(char *s)
 		for (j = 0 ; j < 52 ; j++)
 		{
 			if (s[i] == arr[j])
-				s[i] == arr2[j] + '0';
+				s[i] = arr2[j] + '0';
 		}
 	}
+	return (c);
 }

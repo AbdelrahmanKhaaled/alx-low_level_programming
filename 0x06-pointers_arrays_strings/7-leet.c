@@ -13,6 +13,7 @@ char *leet(char *s)
 {
 	unsigned long int i;
 	int j;
+	char *c = s;
 	int arr[6] = {4, 3, 0, 7, 1, 5};
 	char arr2[6] = {'A', 'E', 'O', 'T', 'L', 'S'};
 	char arr3[6] = {'a', 'e', 'o', 't', 'l', 's'};
@@ -26,5 +27,5 @@ char *leet(char *s)
 		}
 	}
 
-	return (s);
+	return (c);
 }
