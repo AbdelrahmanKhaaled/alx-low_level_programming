@@ -13,13 +13,13 @@ char *leet(char *s)
 {
 	unsigned long int i;
 	int j;
-	int arr[5] = {4, 3, 0, 7, 1};
-	char arr2[5] = {'A', 'E', 'O', 'T', 'L'};
-	char arr3[5] = {'a', 'e', 'o', 't', 'l'};
+	int arr[6] = {4, 3, 0, 7, 1, 5};
+	char arr2[6] = {'A', 'E', 'O', 'T', 'L', 'S'};
+	char arr3[6] = {'a', 'e', 'o', 't', 'l', 's'};
 
 	for (i = 0 ; i < strlen(s) ; i++)
 	{
-		for (j = 0 ; j < 5 ; j++)
+		for (j = 0 ; j < 6 ; j++)
 		{
 			if (s[i] == arr2[j] || s[i] == arr3[j])
 				s[i] = arr[j];
