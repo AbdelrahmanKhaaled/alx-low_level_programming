@@ -12,7 +12,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, count;
+	unsigned long int i;
+	int count;
 
 	count = 0;
 	for (i = strlen(dest) ; i < (strlen(dest) + strlen(src)) ; i++)
