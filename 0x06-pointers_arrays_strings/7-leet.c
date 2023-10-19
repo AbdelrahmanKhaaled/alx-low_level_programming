@@ -13,15 +13,15 @@ char *leet(char *c)
 {
 	unsigned int i;
 	char *cp = c;
-	int arr[6] = {4, 3, 0, 7, 1, 5};
-	char arr2[6] = {'A', 'E', 'O', 'T', 'L', 'S'};
-	char arr3[6] = {'a', 'e', 'o', 't', 'l', 's'};
+	int arr[5] = {4, 3, 0, 7, 1};
+	char arr2[5] = {'A', 'E', 'O', 'T', 'L'};
+	char arr3[5] = {'a', 'e', 'o', 't', 'l'};
 
 
 	while (*c)
 	{
 
-		for (i = 0 ; i < 6 ; i++)
+		for (i = 0 ; i < 5 ; i++)
 		{
 			if (*c == arr2[i] || *c == arr3[i])
 				*c = arr[i] + '0';
