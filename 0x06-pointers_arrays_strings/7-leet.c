@@ -11,7 +11,8 @@
 
 char *leet(char *s)
 {
-	int i, j;
+	unsigned long int i;
+	int j;
 	int arr[5] = {4, 3, 0, 7, 1};
 	char arr2[5] = {'A', 'E', 'O', 'T', 'L'};
 	char arr3[5] = {'a', 'e', 'o', 't', 'l'};
