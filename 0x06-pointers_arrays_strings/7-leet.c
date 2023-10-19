@@ -22,7 +22,7 @@ char *leet(char *s)
 		for (j = 0 ; j < 6 ; j++)
 		{
 			if (s[i] == arr2[j] || s[i] == arr3[j])
-				s[i] = arr[j];
+				s[i] = arr[j] + '0';
 		}
 	}
 

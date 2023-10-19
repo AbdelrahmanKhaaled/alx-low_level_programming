@@ -29,7 +29,7 @@ char *rot13(char *s)
 		for (j = 0 ; j < 52 ; j++)
 		{
 			if (s[i] == arr[j])
-				s[i] == arr2[j];
+				s[i] == arr2[j] + '0';
 		}
 	}
 }
