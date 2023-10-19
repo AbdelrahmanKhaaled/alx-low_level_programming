@@ -15,7 +15,7 @@ char *rot13(char *s)
 	char *c = s;
 	char arr[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char arr2[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	
+
 	while (*s)
 	{
 		for (i = 0 ; i <= 52 ; i++)
