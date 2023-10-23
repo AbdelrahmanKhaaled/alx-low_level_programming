@@ -14,7 +14,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	unsigned long int i, j;
-	char *ptr = needle;
+	char *ptr = haystack;
 	bool flag, flag2;
 
 	i = 0;
