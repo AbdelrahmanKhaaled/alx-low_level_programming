@@ -14,25 +14,21 @@
 char *_strstr(char *haystack, char *needle)
 {
 	unsigned long int i, j;
-	char *ptr = NULL;
+	char *ptr = needle;
 	bool flag;
 
 	i = 0;
-	flag = true;
+	flag = false;
 	for (j = 0 ; j < strlen(haystack) ; j++)
 	{
 		if (needle[i] == '\0')
 			break;
 		if (needle[i] == haystack[j])
 		{
-			if (flag)
-			{
-				ptr = needle;
-				flag = false;
-			}
+			flag = true;
 			i++;
 		}
-		else
+		else if (flag)
 			break;
 	}
 	if (needle[i] != '\0')
