@@ -13,7 +13,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned long int i, j;
-	unsigned int count;
+	unsigned int count = 0;
 
 	for (i = 0 ; i < strlen(s) ; i++)
 	{
@@ -24,6 +24,8 @@ unsigned int _strspn(char *s, char *accept)
 				count++;
 				break;
 			}
+			else if (j == strlen(accept) - 1)
+				return (count);
 		}
 	}
 
