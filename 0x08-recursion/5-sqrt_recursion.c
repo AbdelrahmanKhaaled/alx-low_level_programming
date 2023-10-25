@@ -1,14 +1,5 @@
 #include "main.h"
 
-/**
- * sqrtt -  returns the natural square root of a number.
- *
- * @n: checks input of function
- * @root: checks input of function
- *
- * Return:  returns the natural square root of a number.
-*/
-
 int sqrtt(int n, int root)
 {
 	if (root * root > n)
