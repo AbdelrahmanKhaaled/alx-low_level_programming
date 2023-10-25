@@ -32,7 +32,7 @@ void _print_rev_recursion(char *s)
 
 	i = strlen(s) - 1;
 	if (i <= 0)
-		_putchar('\n');
+		_putchar("");
 	else
 		reverse(s, i);
 }
