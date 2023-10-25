@@ -31,7 +31,7 @@ void _print_rev_recursion(char *s)
 	int i;
 
 	i = strlen(s) - 1;
-	if (i < 0)
+	if (i <= 0)
 		_putchar('\n');
 	reverse(s, i);
 }
