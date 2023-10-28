@@ -14,13 +14,15 @@
 int main(int argc, char const *argv[])
 {
 	int i, sum;
+	char ch;
 
 	(void)argc;
 	i = 1;
 	sum = 0;
 	while (i < argc)
 	{
-		if (atoi(argv[i]) != 0)
+		ch = atoi(argv[i]);
+		if (atoi(argv[i]) != 0 || ch == '0')
 			sum += atoi(argv[i++]);
 		else
 		{
