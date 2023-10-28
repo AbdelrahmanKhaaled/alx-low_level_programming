@@ -11,13 +11,13 @@
  * Return: 0 (Success)
 */
 
-int main(int argc , char const *argv[])
+int main(int argc, char const *argv[])
 {
 	int i;
 
 	i = 0;
 	while (i < argc)
-	{	
+	{
 		printf("%s\n", argv[i++]);
 	}
 	return (0);

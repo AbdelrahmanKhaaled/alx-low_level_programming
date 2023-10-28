@@ -11,9 +11,9 @@
  * Return: 0 (Success), non-zero-fail
 */
 
-int main(int argc , char const *argv[])
+int main(int argc, char const *argv[])
 {
-	if(argc == 2)
+	if (argc == 2)
 	{
 	int i, leastcents = 0, money = atoi(argv[1]);
 	int cents[] = {25, 10, 5, 2, 1};
@@ -22,7 +22,7 @@ int main(int argc , char const *argv[])
 	{
 		if (money >= cents[i])
 		{
-		        leastcents += money / cents[i];
+			leastcents += money / cents[i];
 			money = money % cents[i];
 			if (money % cents[i] == 0)
 			{
