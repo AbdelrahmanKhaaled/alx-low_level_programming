@@ -11,24 +11,21 @@
  * Return: 0 (Success)
 */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	int i, sum;
-	char ch;
+	int sum;
+	char *c;
 
-	(void)argc;
-	i = 1;
 	sum = 0;
-	while (i < argc)
+	while (--argc)
 	{
-		ch = atoi(argv[i]);
-		if (atoi(argv[i]) != 0 || ch == '0')
-			sum += atoi(argv[i++]);
-		else
-		{
-			printf("Error\n");
-			return (0);
-		}
+		for (c = argv[argc] ; *c ; c++)
+			if (*c < '0' && *c > '9')
+			{
+				printf("Error\n");
+				return (0);
+			}
+		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
 	return (0);
