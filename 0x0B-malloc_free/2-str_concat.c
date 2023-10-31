@@ -16,25 +16,26 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = '\0';
 	}
 	if (s2 == NULL)
 	{
-		return (NULL);
+		s2 = '\0';
 	}
 	else
 	{
-		m = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
+		m = malloc((strlen(s1) + strlen(s2) - 1) * sizeof(char));
 		if (m == NULL)
 		{
 			return (NULL);
 		}
 		else
 		{
-			for (i = 0 ; i < strlen(s1) ; i++)
+			for (i = 0 ; s1[i] != '\0' ; i++)
 				m[i] = s1[i];
-			for (i = strlen(s1) ; i < (strlen(s1)  + strlen(s2)) ; i++)
-				m[i] = s1[i - strlen(s1)];
+			for (i = strlen(s1) ; s2[i - strlen(s1)] != '\0' ; i++)
+				m[i] = s2[i - strlen(s1)];
+			m[i] = '\0';
 		}
 	}
 	return (m);
