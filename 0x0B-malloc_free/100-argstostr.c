@@ -12,7 +12,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, count;
+	int i, count, cmpt = 0;
 	unsigned int j;
 	char *s;
 
@@ -35,9 +35,9 @@ char *argstostr(int ac, char **av)
 		{
 			for (i = 0 ; i < ac ; i++)
 			{
-				for (j = 0 ; av[i][j] ; j++)
-					s += av[i][j];
-				s += '\n';
+				for (j = 0 ; av[i][j] ; j++ , cmpt++)
+					s[cmpt] = av[i][j];
+				s[cmpt] = '\n';
 			}
 		}
 	}
