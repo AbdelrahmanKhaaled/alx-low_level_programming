@@ -6,7 +6,6 @@
  *
  * @grid: checks input of function
  * @height: checks input of function
- *
 */
 
 void free_grid(int **grid, int height)
