@@ -15,23 +15,30 @@ char *argstostr(int ac, char **av)
 	unsigned int i, j, count;
 	char *s;
 
-	count = 0;
-	for (i = 0 ; i < ac ; i++)
-		for (j = 0 ; j < strlen(av[i]) ; j++)
-			count++;
-	s = malloc(count * sizeof(char));
-	if (s == NULL)
+	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
+		count = 0;
 		for (i = 0 ; i < ac ; i++)
 			for (j = 0 ; j < strlen(av[i]) ; j++)
+				count++;
+		s = malloc(count * sizeof(char));
+		if (s == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (i = 0 ; i < ac ; i++)
 			{
-				s += av[i][j];
+				for (j = 0 ; j < strlen(av[i]) ; j++)
+					s += av[i][j];
 				s += '\n';
 			}
+		}
 	}
 	return (s);
 }
