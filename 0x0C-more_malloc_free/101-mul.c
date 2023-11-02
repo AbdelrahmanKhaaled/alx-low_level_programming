@@ -12,8 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	long int num2;
-
+	char *s;
+	int num2, i = 0;
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -30,6 +30,16 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	num2 = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", num2);
+	while(num2)
+	{
+		*s++ = num2 % 10 ;
+		num2 /= 10;
+		i++;
+	}
+	while(--i)
+	{
+		_putchar(s[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
