@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	if (atoi(argv[1]) == 0 || atoi(argv[2]) == 0)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	if (atoi(argv[1]) / 10 == 0 || atoi(argv[2]) / 10 == 0)
 	{
 		printf("Error\n");
