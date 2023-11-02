@@ -30,16 +30,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	num2 = atoi(argv[1]) * atoi(argv[2]);
-	while(num2)
-	{
-		*s++ = num2 % 10 ;
-		num2 /= 10;
-		i++;
-	}
-	while(--i)
-	{
-		_putchar(s[i]);
-	}
-	_putchar('\n');
+	printf("%d\n", num);
 	return (0);
 }
