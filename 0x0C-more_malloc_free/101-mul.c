@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int num2;
-	
+
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	num2 = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", num);
+	printf("%d\n", num2);
 	return (0);
 }
