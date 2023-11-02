@@ -11,17 +11,15 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *str;
+	void *str;
 	int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	str = malloc(nmemb * size);
+	str = calloc(nmemb, size);
 	if (str == NULL)
 		return (NULL);
-	for (i = 0 ; i < nmemb ; i++)
-		str[i] = 0;
-	return ((void *)str);
+	return (str);
 
 }
