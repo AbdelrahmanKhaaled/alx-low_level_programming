@@ -1,10 +1,18 @@
 #ifndef DOG_H
 #define DOG_H
 
-struct dog {
-	char* name;
+/**
+ * dog - Structure
+ *
+ * Description: Sturcture contains 3 variables
+ * with different data types
+*/
+
+struct dog
+{
+	char *name;
 	float age;
-	char* owner;
+	char *owner;
 };
 
 typedef struct dog dog_t;
