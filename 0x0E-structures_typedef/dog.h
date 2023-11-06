@@ -2,7 +2,10 @@
 #define DOG_H
 
 /**
- * dog - Structure
+ * struct dog - Structure
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
  *
  * Description: Sturcture contains 3 variables
  * with different data types
