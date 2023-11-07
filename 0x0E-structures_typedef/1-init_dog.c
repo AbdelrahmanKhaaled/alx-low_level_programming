@@ -3,10 +3,10 @@
 /**
  * init_dog - initialize a variable of type struct dog.
  *
- * @d: checks input of function
- * @name: checks input of function
- * @age: checks input of function
- * @owner: checks input of function
+ * @d: initialize dog 
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
  *
  * Return: void.
 */
