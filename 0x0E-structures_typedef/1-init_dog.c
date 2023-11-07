@@ -7,6 +7,8 @@
  * @name: checks input of function
  * @age: checks input of function
  * @owner: checks input of function
+ *
+ * Return: void.
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
