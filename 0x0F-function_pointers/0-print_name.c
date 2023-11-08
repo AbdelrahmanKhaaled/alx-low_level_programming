@@ -52,5 +52,6 @@ void print_name_uppercase(char *name)
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (name && f)
+		f(name);
 }
