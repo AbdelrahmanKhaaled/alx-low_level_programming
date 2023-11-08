@@ -7,8 +7,8 @@
  * @size: checks input of function
  * @cmp: checks input of function
  *
- * Return: returns 1 if 'c' is alphabet
- *       otherwise always 0 (Success)
+ * Return: returns elem of array if is exist
+ *    otherwise always -1 (Success)
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -20,7 +20,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		for (i = 0 ; i < size ; i++)
 		{
 			if (cmp(array[i]))
-				return (array[i]);
+				return (i);
 		}
 	}
 	return (-1);
