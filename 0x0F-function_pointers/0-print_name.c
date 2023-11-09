@@ -5,11 +5,12 @@
  *
  * @name: checks input of function
  * @f: checks input of function
+ *
 */
 
 
 void print_name(char *name, void (*f)(char *))
 {
 	if (name && f)
-		f(name);
+		(*f)(name);
 }
