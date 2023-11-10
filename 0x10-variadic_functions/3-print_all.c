@@ -2,12 +2,9 @@
 #include <string.h>
 
 /**
- * 
+ * print_all - prints anything.
  *
- * @c: checks input of function
- *
- * Return: returns 1 if 'c' is alphabet
- *    otherwise always 0 (Success)
+ * @format: checks input of function
 */
 
 void print_all(const char * const format, ...)
@@ -16,16 +13,18 @@ void print_all(const char * const format, ...)
 	const char *frmt;
 	char ch;
 	int num;
-	float ratio;
+	double ratio;
 	const char *str;
+	unsigned int count;
 
 	frmt = format;
-	va_start(args, strlen(format));
-	while(*frmt)
+	count = strlen(format);
+	
+	while (*frmt)
 	{
 		if (*frmt == 'c')
 		{
-			ch = va_arg(args, const char*);
+			ch = va_arg(args, int);
 			printf("%c, ", ch);
 		}
 		else if (*frmt == 'i')
@@ -35,7 +34,7 @@ void print_all(const char * const format, ...)
 		}
 		else if (*frmt == 'f')
 		{
-			ratio = va_arg(args, float);
+			ratio = va_arg(args, double);
 			printf("%f, ", ratio);
 		}
 		else if (*frmt == 's')
