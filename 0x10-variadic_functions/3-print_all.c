@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 
 	frmt = format;
 	count = strlen(format);
-	
+
 	while (*frmt)
 	{
 		if (*frmt == 'c')
