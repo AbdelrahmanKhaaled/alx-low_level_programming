@@ -1,6 +1,6 @@
-section		.text
-	extern	printf
-	glopal	main
+section         .text
+        extern  printf
+        global  main
 
 main:
 	mov		edi, msg
