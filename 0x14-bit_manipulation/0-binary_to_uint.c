@@ -23,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] < 48 || b[i] > 57)
 			return (0);
-		c[counter++] == b[i];
+		c[counter++] = b[i];
 	}
 	c[counter] = b[i];
 	number = c[0] - 48;
