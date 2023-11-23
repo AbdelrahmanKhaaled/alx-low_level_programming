@@ -3,6 +3,27 @@
 #include <stdlib.h>
 
 /**
+ * _strlen -  converts a binary number to an unsigned int.
+ *
+ * @str: checks input of function
+ *
+ * Return: returns the converted number,
+*/
+
+int _strlen(const char *str)
+{
+	int len;
+
+	len = 0;
+	while (*str++)
+	{
+		len++;
+		str++;
+	}
+	return (len);
+}
+
+/**
  * binary_to_uint -  converts a binary number to an unsigned int.
  *
  * @b: checks input of function
@@ -18,9 +39,9 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-	c = malloc(strlen(b));
+	c = malloc(_strlen(b));
 	counter = 0;
-	for (i = (int) strlen(b) - 1 ; i >= 0 ; i--)
+	for (i = _strlen(b) - 1 ; i >= 0 ; i--)
 	{
 		if (b[i] < 48 || b[i] > 57)
 			return (0);
@@ -28,7 +49,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	number = c[0] - 48;
 	counter = 1;
-	for (i = 1 ; i < (int) strlen(b) ; i++)
+	for (i = 1 ; i < _strlen(b) ; i++)
 	{
 		counter *= 2;
 		number += (c[i] - 48) * counter;
