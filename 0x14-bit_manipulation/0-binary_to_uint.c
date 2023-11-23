@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	c = malloc(strlen(b));
 	counter = 0;
-	for (i = strlen(b) - 1 ; i >= 0 ; i--)
+	for (i = (int) strlen(b) - 1 ; i >= 0 ; i--)
 	{
 		if (b[i] < 48 || b[i] > 57)
 			return (0);
@@ -28,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	number = c[0] - 48;
 	counter = 1;
-	for (i = 1 ; i < strlen(b) ; i++)
+	for (i = 1 ; i < (int) strlen(b) ; i++)
 	{
 		counter *= 2;
 		number += (c[i] - 48) * counter;
