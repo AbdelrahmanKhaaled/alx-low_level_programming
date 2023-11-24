@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int number, i, counter;
 	char *c;
 
-	if (b == NULL || b == '\0')
+	if (b == NULL || b[0] == '\0')
 		return (0);
 	c = malloc(strlen(b));
 	counter = 0;
