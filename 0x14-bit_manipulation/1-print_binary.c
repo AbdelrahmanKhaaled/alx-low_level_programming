@@ -11,12 +11,12 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int number, number2, counter;
-	int length;
+	int length, i;
 	bool flag = false;
 
 	number = 0;
 	number2 = 1;
-	while(n)
+	while (n)
 	{
 		counter = n;
 		n *= .5;
@@ -27,13 +27,13 @@ void print_binary(unsigned long int n)
 		}
 		else
 		{
-			for (int i = 0 ; i < length ; i++)
+			for (i = 0 ; i < length ; i++)
 			{
 				number2 *= 10;
 			}
 			flag = false;
 			length++;
-			if(number2 == 1)
+			if (number2 == 1)
 				number += (counter - (n * 2));
 			else
 			{
@@ -44,7 +44,7 @@ void print_binary(unsigned long int n)
 	}
 	if (flag)
 	{
-		for (int i = 0 ; i < length - 1; i++)
+		for (i = 0 ; i < length - 1; i++)
 			number *= 10;
-	}               
+	}
 }
