@@ -1,41 +1,50 @@
 #include "main.h"
 
 /**
- *  - print
+ * print_binary - prints the binary representation of a number.
  *
- * @args: checks input of function
+ * @n: checks input of function
  *
- * Return: returns number of characters
+ * Return: void.
 */
 
 void print_binary(unsigned long int n)
 {
-	unsigned int number, length, num, i;
+	unsigned long int number, number2, counter;
+	int length;
+	bool flag = false;
 
-	if (number == 0)
+	number = 0;
+	number2 = 1;
+	while(n)
 	{
-		_putchar('0');
-		length++;
-		return (length);
-	}
-	else
-	{
-		while(num)
+		counter = n;
+		n *= .5;
+		if (counter - (n * 2) + 48 == '0')
 		{
-			num = num / 2;
+			flag = true;
 			length++;
 		}
-		char s [length];
-		while(number)
+		else
 		{
-			s[i] = (number % 2) + '0';
-			number = number / 2;
-			i++;
-		}
-		for (int j = length - 1; j >= 0; j--)
-		{
-			_putchar(s[j]);
+			for (int i = 0 ; i < length ; i++)
+			{
+				number2 *= 10;
+			}
+			flag = false;
+			length++;
+			if(number2 == 1)
+				number += (counter - (n * 2));
+			else
+			{
+				number = number + number2;
+				number2 = 1;
+			}
 		}
 	}
-	return (length);
+	if (flag)
+	{
+		for (int i = 0 ; i < length - 1; i++)
+			number *= 10;
+	}               
 }
