@@ -45,5 +45,5 @@ void print_binary(unsigned long int n)
 		for (i = 0 ; i < length - 1; i++)
 			number *= 10;
 	}
-	printf("%d\n", number);
+
 }
