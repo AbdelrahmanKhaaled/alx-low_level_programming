@@ -3,9 +3,7 @@
 /**
  * print_binary - prints the binary representation of a number.
  *
- * @n: checks input of function
- *
- * Return: void.
+ * @n: checks input of function.
 */
 
 void print_binary(unsigned long int n)
