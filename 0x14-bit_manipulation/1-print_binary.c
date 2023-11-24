@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned long number, counter;
 	int length;
-	bool flag = false;
+	bool flag = true;
 
 	number = length = 0;
 	if (n == 0)
