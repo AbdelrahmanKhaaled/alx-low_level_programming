@@ -36,18 +36,15 @@ void print_binary(unsigned long int n)
 				number *= 10;
 				number += (counter - (n * 2));
 			}
-		}
-	}
+		} }
 	while (number)
 	{
 		counter = number;
 		number *= .1;
-		_putchar(counter - (number * 10) + 48);
-	}
+		_putchar(counter - (number * 10) + 48);	}
 	while (length)
 	{
 		_putchar('0');
-		length--;
-	}
+		length--; }
 
 }
