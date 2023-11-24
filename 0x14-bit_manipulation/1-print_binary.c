@@ -8,42 +8,46 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long number, number2, counter;
-	int length, i;
+	unsigned long number, counter;
+	int length;
 	bool flag = false;
 
-	number = 0;
-	number2 = 1;
+	number = length = 0;
+	if (n == 0)
+		_putchar('0');
 	while (n)
 	{
 		counter = n;
 		n *= .5;
 		if (counter - (n * 2) + 48 == '0')
 		{
-			flag = true;
-			length++;
+			if (flag)
+				length++;
+			else
+				number *= 10;
 		}
 		else
 		{
-			for (i = 0 ; i < length ; i++)
-			{
-				number2 *= 10;
-			}
 			flag = false;
-			length++;
-			if (number2 == 1)
+			if (number == 0)
 				number += (counter - (n * 2));
 			else
 			{
-				number = number + number2;
-				number2 = 1;
+				number *= 10;
+				number += (counter - (n * 2));
 			}
 		}
 	}
-	if (flag)
+	while (number)
 	{
-		for (i = 0 ; i < length - 1; i++)
-			number *= 10;
+		counter = number;
+		number *= .1;
+		_putchar(counter - (number * 10) + 48);
+	}
+	while (length)
+	{
+		_putchar('0');
+		length--;
 	}
 
 }
