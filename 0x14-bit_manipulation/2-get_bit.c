@@ -11,7 +11,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int length;
+	unsigned int length;
 	
 	length = 0;
 	while (n)
