@@ -37,13 +37,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 					if (idx == index)
 					{
 						current->prev->next = current->next;
-						return (1);
-					}
+						return (1); }
 					idx++;
-					current = current->next;
-				}
-			}
-		}
-	}
+					current = current->next; } } } }
 	return (-1);
 }
