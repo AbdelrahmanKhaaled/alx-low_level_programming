@@ -1,15 +1,15 @@
 C = gcc
-SRC = .c
-OBJ = .o
+SRC = main.c school.c
+OBJ = main.o school.o
 NAME = school
 RM = rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 .PHONY: all clean oclean fclean re
-all: m.h main${OBJ} school${OBJ}
-	${CC} main${OBJ} school${OBJ} -o ${NAME}
+all: m.h ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 clean:
 	${RM} *~ ${NAME}
 oclean:
-	${RM} *${OBJ}
+	${RM} ${OBJ}
 fclean: clean oclean
 re: fclean all
